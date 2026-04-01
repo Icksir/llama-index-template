@@ -14,7 +14,11 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "llama_index_template", from = "src"}]
+packages = [
+    {include = "api", from = "src"},
+    {include = "utils", from = "src"},
+    {include = "workflow", from = "src"},    
+    ]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
