@@ -6,12 +6,11 @@ import os
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://estampapro.com"
 ]
 
 app = FastAPI(
-    title="Estampa Pro API",
-    description="API backend para Estampa Pro",
+    title="Llama Index API",
+    description="API backend",
     version="1.0.0",
 )
 
@@ -28,7 +27,7 @@ app.include_router(example_router)
 @app.get("/")
 async def root():
     """Endpoint raíz de prueba"""
-    return {"message": "Bienvenido a Estampa Pro API"}
+    return {"message": "Bienvenido a Llama Index Template API"}
 
 
 @app.get("/health")
